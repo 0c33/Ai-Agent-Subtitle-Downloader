@@ -131,7 +131,7 @@ def Decider_Agent(state: State) -> Command[Literal['Handle_Unknown', 'Analyze_Mu
 
     updated_index = state['Sub_index']
 
-    subtitle = state['Subtitles'][state['Sub_index'] + 15]
+    subtitle = state['Subtitles'][state['Sub_index']]
 
     if ((str(subtitle['Episode']) == 'null') and ((subtitle['Multi_Subtitle'])) == None):
         next_node = 'Handle_Unknown'
